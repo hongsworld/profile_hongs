@@ -167,7 +167,7 @@ display: inline-block;
 #menu>li>a>span{
 position: relative;
 display: block;
-font: 700 110px/1.2em Arial, sans-serif;
+font: 500 85px/1.5em Arial, sans-serif;
 text-transform: uppercase;
 color: #39363c;
 letter-spacing: -7px;
