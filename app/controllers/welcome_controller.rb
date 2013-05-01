@@ -16,5 +16,6 @@ def index2
   end
   sendmail_to "jang2poom@naver.com"
 end
- 
+def test1
+end
 end
